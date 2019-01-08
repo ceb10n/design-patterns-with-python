@@ -1,8 +1,6 @@
-def say_hello():
-    print('Hello from {}'.format(id(say_hello)))
+from smodule import this_is_like_a_singleton as s1
+from smodule import this_is_like_a_singleton as s2
 
 
 if __name__ == '__main__':
-    print(say_hello())
-    print(say_hello())
-    print(say_hello())
+    print(s1 is s2)
